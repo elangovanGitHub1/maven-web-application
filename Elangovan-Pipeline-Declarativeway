@@ -1,7 +1,7 @@
 pipeline {
 
 agent{
-label 'walmartnode'
+label 'nodes'
 }
 
 tools{
