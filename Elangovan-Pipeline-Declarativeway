@@ -1,6 +1,8 @@
 pipeline {
 
+agent{
 label 'walmartnode'
+}
 
 tools{
 //Global Tool Configuration
