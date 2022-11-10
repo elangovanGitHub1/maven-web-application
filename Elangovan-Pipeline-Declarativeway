@@ -9,8 +9,8 @@ maven 'maven3.8.6'
 
 triggers {
   // pollSCM '* * * * *'
-  cron '* * * * *'
-  // githubPush()
+  // cron '* * * * *'
+  githubPush()
 }
 
 options {
