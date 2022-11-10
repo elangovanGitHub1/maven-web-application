@@ -14,7 +14,7 @@ echo "The node name is: ${env.NODE_NAME}"
 echo "The build number is: ${env.BUILD_NUMBER}" */
 
 options {
-  timestamps()
+  timestamps
 }
 
 stage ('CheckOutCode'){
