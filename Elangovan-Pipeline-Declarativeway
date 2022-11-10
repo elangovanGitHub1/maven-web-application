@@ -7,6 +7,17 @@ tools{
 maven 'maven3.8.6'
 }
 
+triggers {
+  pollSCM '* * * * *'
+  // cron '* * * * *'
+  // githubPush()
+}
+
+options {
+  buildDiscarder logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '3', daysToKeepStr: '', numToKeepStr: '3')
+  timestamps()
+}
+
 stages {
 
 //Get the Source Code
