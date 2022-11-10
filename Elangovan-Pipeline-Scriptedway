@@ -9,9 +9,13 @@ def mavenHome = tool name: 'maven3.8.6'
 // properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '3', daysToKeepStr: '', numToKeepStr: '3')), pipelineTriggers([cron('* * * * *')])])
 // properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '3', daysToKeepStr: '', numToKeepStr: '3')), pipelineTriggers([githubPush()])])
 
-echo "The JobName is: ${env.JOB_NAME}" 
+/* echo "The JobName is: ${env.JOB_NAME}" 
 echo "The node name is: ${env.NODE_NAME}"
-echo "The build number is: ${env.BUILD_NUMBER}"
+echo "The build number is: ${env.BUILD_NUMBER}" */
+
+options {
+  timestamps()
+}
 
 stage ('CheckOutCode'){
 git branch: 'development', credentialsId: '024adbe1-b258-4f39-aa67-342d7a8e4a1b', url: 'https://github.com/elangovanGitHub1/maven-web-application.git'
