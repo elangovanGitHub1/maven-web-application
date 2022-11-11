@@ -1,7 +1,7 @@
-// node{
+node{
 
+// node('walmartnode'){
 // node('nodes'){
-node('walmartnode'){
 
 try{
 
