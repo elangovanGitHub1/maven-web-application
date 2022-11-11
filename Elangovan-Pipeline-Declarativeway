@@ -1,9 +1,13 @@
-pipeline {
+pipeline{
 
+agent any
+
+/*
 agent{
 // label 'walmartnode'
 label 'nodes'
 }
+*/
 
 tools{
 //Global Tool Configuration
