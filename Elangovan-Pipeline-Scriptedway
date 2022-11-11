@@ -1,4 +1,7 @@
-node('nodes'){
+node{
+
+// node('nodes'){
+// node('walmartnode'){
 
 try{
 
